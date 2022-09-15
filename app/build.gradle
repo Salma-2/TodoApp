@@ -51,6 +51,8 @@ dependencies {
     implementation "com.jakewharton.timber:timber:$timberVersion"
     implementation "androidx.legacy:legacy-support-v4:$androidXLegacySupport"
     implementation "androidx.room:room-runtime:$roomVersion"
+    testImplementation 'junit:junit:4.12'
+    testImplementation project(path: ':app')
     kapt "androidx.room:room-compiler:$roomVersion"
 
     // Architecture Components
