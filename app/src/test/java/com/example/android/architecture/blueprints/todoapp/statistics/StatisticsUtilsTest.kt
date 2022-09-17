@@ -5,7 +5,8 @@ import org.hamcrest.CoreMatchers.`is`
 
 
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertThat
+import org.hamcrest.MatcherAssert.assertThat
+
 
 import org.junit.Test
 
