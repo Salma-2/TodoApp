@@ -14,7 +14,7 @@ object ServiceLocator {
 
     //it could get used by multiple threads
     @Volatile
-    var tasksRepository: TasksRepository? = null
+    private var tasksRepository: TasksRepository? = null
 
     fun provideTasksRepository(context: Context): TasksRepository {
 // to prevent creating the repo twice.
@@ -24,7 +24,6 @@ object ServiceLocator {
     }
 
     private fun createTasksRepository(context: Context): TasksRepository {
-//        DefaultTasksRepository.getRepository(app)
         val newRepo =
             DefaultTasksRepository(TasksRemoteDataSource, createTaskLocalDataSource(context))
         tasksRepository = newRepo
