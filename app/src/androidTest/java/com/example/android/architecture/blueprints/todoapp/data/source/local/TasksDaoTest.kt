@@ -54,9 +54,6 @@ class TasksDaoTest {
         assertThat(loaded.description, `is`(task.description))
         assertThat(loaded.isCompleted, `is`(task.isCompleted))
 
-
-
-
     }
 
 
