@@ -22,6 +22,8 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e52e97a3505f52fb94879188df38eaf/runner-1.2.0-beta01-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a08f3befa52e457d2287954fcc4ba58/jetified-junit-4.12.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54ebafa9f487dc4e3a1d759ed05b4d70/jetified-kotlinx-coroutines-test-1.3.7.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a3f5fa8fbaa10490010d486fb46d117a/jetified-dexmaker-mockito-2.12.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa67d515352c0f3799a503b857e97b25/jetified-mockito-core-2.12.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/633e1d2f145325e9d8eaefcc57a78969/databinding-adapters-4.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5bde515e0969f93078ab3f51a52cb669/databinding-runtime-4.0.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/4.0.1/cdca8698ee545b79d656a4f1eeb103f60fad3ed1/databinding-common-4.0.1.jar</arg>
@@ -106,6 +108,12 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/57495251fa235ca40758d16b12a90d34/jetified-kotlin-stdlib-common-1.3.72.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd0adbf2849e5a67a9ba51dc9025b804/jetified-timber-4.7.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2b266f1403496219cfb7e8c29da63d22/jetified-annotations-16.0.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/47a4608de2f393e6ffe55d437156aa4d/jetified-byte-buddy-1.7.9.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b0fd976a3d323c0a99a3fccdec3ea3c9/jetified-byte-buddy-agent-1.7.9.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4af5fb90737668f9b9cbfe809fd4f70/jetified-objenesis-2.6.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/34bc43e08383b44c2c3de5cdac5b45ed/jetified-dexmaker-2.12.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f27dbf79f2b2c1aeb31624a530b003e/jetified-dalvik-dx-7.1.0_r7.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d3be8a18d73c0decde9227f043e8966b/jetified-libcore-dex-7.1.0_r7.jar</arg>
                 <arg>$USER_HOME$/Android/Sdk/platforms/android-30/android.jar</arg>
                 <arg>$USER_HOME$/Android/Sdk/build-tools/29.0.2/core-lambda-stubs.jar</arg>
               </args>
@@ -184,6 +192,8 @@
     <orderEntry type="module" module-name="TodoApp.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.linkedin.dexmaker:dexmaker-mockito:2.12.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.12.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.databinding:databinding-common:4.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3" level="project" />
@@ -204,6 +214,12 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.72" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.72" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:16.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy:1.7.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy-agent:1.7.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.linkedin.dexmaker:dexmaker:2.12.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jakewharton.android.repackaged:dalvik-dx:7.1.0_r7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jakewharton.android.repackaged:libcore-dex:7.1.0_r7" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.ext:junit:1.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-contrib:3.2.0-beta01@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-core:3.2.0-beta01@aar" level="project" />
