@@ -1,5 +1,6 @@
 package com.example.android.architecture.blueprints.todoapp.data.source
 
+import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.map
@@ -20,6 +21,7 @@ class FakeTestRepository : TasksRepository {
 
     private val observableTasks = MutableLiveData<Result<List<Task>>>()
 
+    @VisibleForTesting
     fun setReturnError(value: Boolean) {
         shouldReturnError = value
     }

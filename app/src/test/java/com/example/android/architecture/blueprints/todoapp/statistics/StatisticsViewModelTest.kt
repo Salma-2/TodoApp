@@ -21,7 +21,7 @@ class StatisticsViewModelTest {
     @get:Rule
     var instantTaskExecutorRule = InstantTaskExecutorRule()
 
-    private lateinit var tasksRepository: TasksRepository
+    private lateinit var tasksRepository: FakeTestRepository
 
     // Subject under test
     private lateinit var statisticsViewModel: StatisticsViewModel
@@ -42,4 +42,14 @@ class StatisticsViewModelTest {
 
     }
 
+    @Test
+    fun loadStatisticsWhenTasksAreUnavailable_callErrorToDisplay() {
+        // Make the repository return errors.
+        tasksRepository.setReturnError(true)
+        statisticsViewModel.refresh()
+
+        // Then empty and error are true (which triggers an error message to be shown).
+        assertThat(statisticsViewModel.empty.getOrAwaitValue(), `is`(true))
+        assertThat(statisticsViewModel.error.getOrAwaitValue(), `is`(true))
+    }
 }
